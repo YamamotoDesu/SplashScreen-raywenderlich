@@ -3,16 +3,17 @@ Splash Screen Tutorial for Android
 
 Fast forward to Android 12, which added the SplashScreen API. From Android 12 onward, all apps show a default splash screen, and developers can customize it according to their requirements.
 
-## Creating a Simple Splash Screen
+# Creating a Simple Splash Screen
 ![2022-06-12 12 16 58](https://user-images.githubusercontent.com/47273077/173212757-c7b73d78-7a5f-40ed-ab85-230c4e0121fd.gif)
 
-### 1. Adding the Dependency
+###　1. Adding the Dependency
 build.gradle
 ```gradle
 implementation 'androidx.core:core-splashscreen:1.0.0-beta01'
 ```
 
-### 2. Adding the Adaptive Icon
+## 2. Adding the Adaptive Icon
+### ■ SplashScreen API theme
 styles.xml
 ```xml
 <style name="Theme.App.Starting" parent="Theme.SplashScreen">
@@ -21,6 +22,15 @@ styles.xml
   <item name="windowSplashScreenBackground">@color/ic_launcher_background</item>
 </style>
 
+```
+
+### ■ Legacy Splash Screen Theme
+```xml 
+  <style name="LegacySplashTheme" parent="Theme.AppCompat.NoActionBar">
+    <item name="android:windowBackground">@drawable/legacy_splash_background</item>
+    <item name="android:windowTranslucentStatus">true</item>
+    <item name="android:windowTranslucentNavigation">true</item>
+  </style>
 ```
 
 ### 3. Setting the Style
