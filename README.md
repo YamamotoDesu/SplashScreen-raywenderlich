@@ -70,7 +70,8 @@ Your file should look like this:
     </activity>
 ```
 
-### 4. Installing the Splash Screen
+## 4. Installing the Splash Screen
+### ■ Installing SplashScreen API 
 MainActivity.kt
 ```kt
 import androidx.core.splashscreen.SplashScreen.Companion.installSplashScreen
