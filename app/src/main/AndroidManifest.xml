@@ -26,14 +26,13 @@
       android:theme="@style/LegacySplashTheme"
       android:exported="true">
       <!--
-        TODO: (Legacy Migration) Uncomment if legacy implementation requires this to be the
         launching Activity. Note: You will also need to comment out the equivalent intent-filter
         block of the MainActivity above.
       -->
-<!--      <intent-filter>-->
-<!--        <action android:name="android.intent.action.MAIN" />-->
-<!--        <category android:name="android.intent.category.LAUNCHER" />-->
-<!--      </intent-filter>-->
+      <intent-filter>
+        <action android:name="android.intent.action.MAIN" />
+        <category android:name="android.intent.category.LAUNCHER" />
+      </intent-filter>
     </activity>
 
   </application>

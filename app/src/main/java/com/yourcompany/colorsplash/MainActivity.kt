@@ -45,7 +45,7 @@ class MainActivity : AppCompatActivity() {
 
   override fun onCreate(savedInstanceState: Bundle?) {
     // TODO: (Legacy Migration) Remove old app theme
-    // setTheme(R.style.AppTheme)
+     setTheme(R.style.AppTheme)
 
     // TODO: Install Splash Screen
 
