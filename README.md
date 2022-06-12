@@ -34,7 +34,8 @@ styles.xml
   </style>
 ```
 
-### 3. Setting the Style
+## 3. Setting the Style
+### ■ SplashScreen API Setting
 ```xml
 android:theme="@style/Theme.App.Starting"
 ```
@@ -50,6 +51,23 @@ Your file should look like this:
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+```
+
+### ■ Legacy Splash Screen Setting
+```xml
+   <activity
+      android:name=".LegacySplashActivity"
+      android:theme="@style/LegacySplashTheme"
+      android:exported="true">
+      <!--
+        launching Activity. Note: You will also need to comment out the equivalent intent-filter
+        block of the MainActivity above.
+      -->
+      <intent-filter>
+        <action android:name="android.intent.action.MAIN" />
+        <category android:name="android.intent.category.LAUNCHER" />
+      </intent-filter>
+    </activity>
 ```
 
 ### 4. Installing the Splash Screen
