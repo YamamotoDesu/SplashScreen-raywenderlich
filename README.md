@@ -6,7 +6,8 @@ Fast forward to Android 12, which added the SplashScreen API. From Android 12 on
 # Creating a Simple Splash Screen
 ![2022-06-12 12 16 58](https://user-images.githubusercontent.com/47273077/173212757-c7b73d78-7a5f-40ed-ab85-230c4e0121fd.gif)
 
-###　1. Adding the Dependency
+##  1. Adding the Dependency
+■ SplashScreen API Dependency
 build.gradle
 ```gradle
 implementation 'androidx.core:core-splashscreen:1.0.0-beta01'
