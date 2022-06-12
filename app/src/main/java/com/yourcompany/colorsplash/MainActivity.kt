@@ -38,16 +38,17 @@ import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import java.util.Timer
 import kotlin.concurrent.schedule
+import androidx.core.splashscreen.SplashScreen.Companion.installSplashScreen
+
 
 class MainActivity : AppCompatActivity() {
 
   var contentHasLoaded = false
 
   override fun onCreate(savedInstanceState: Bundle?) {
-    // TODO: (Legacy Migration) Remove old app theme
-    // setTheme(R.style.AppTheme)
 
     // TODO: Install Splash Screen
+    val splashScreen = installSplashScreen()
 
     super.onCreate(savedInstanceState)
     setContentView(R.layout.activity_main)
